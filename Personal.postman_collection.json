@@ -1,0 +1,790 @@
+{
+	"info": {
+		"_postman_id": "a2d19faf-5f59-4e6c-a8c4-e3697b473e11",
+		"name": "ChatServer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserToSsoIdSendMessage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"AccessToken\": \"9ec27257b72448dc97d1974ce6611665\",\n\"SsoId\": \"8148403\",\n\"Message\": \"امین 2222 گروه\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/userToSsoIdSendMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"userToSsoIdSendMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserToUsernameSendMessage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"468688f013a2441a9fb79233b54e4302\",\n    \"Username\": \"a.najafisales\",\n    \"Message\": \"333 گروه\",\n    \"JsonMetaData\": \"{\\\"actionType\\\":1,\\\"data\\\":\\\"{\\\\\\\"amount\\\\\\\":9685,\\\\\\\"description\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"id\\\\\\\":161,\\\\\\\"state\\\\\\\":1,\\\\\\\"destUserId\\\\\\\":1900896}\\\"}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/userToUsernameSendMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"userToUsernameSendMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateGroup",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"2f1d31758e774041adfbc63f69e827bb\",\n    \"Title\": \"25 گروه تستی\",\n    \"Members\": [\n        \"22177\",\n        \"22781\",\n        \"22921\"\n    ],\n    \"JsonMetaData\": \"{\\\"groupId\\\":19,\\\"groupStatus\\\":\\\"New\\\",\\\"groupType\\\":1,\\\"setting\\\":{\\\"exactAmountPaymentEnable\\\":true,\\\"exceedMaxAmountEnable\\\":false,\\\"showMembersCountEnable\\\":true,\\\"showOtherMembersEnable\\\":true,\\\"showPaymentDescriptionEnable\\\":false,\\\"showPaymentStateEnable\\\":true,\\\"showRequestAmountEnable\\\":true,\\\"showRequestDescriptionEnable\\\":false},\\\"totalAmount\\\":20}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/createGroup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"createGroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserToUserIdSendMessage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"AccessToken\": \"216080047d02407c837dafc3d15e048a\",\n\"UserId\": \"19342\",\n\"Message\": \"666666 گروه\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/userToUserIdSendMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"userToUserIdSendMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendMessageToThread",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"b2bd85162093491dbf398d219672de23\",\n    \"ThreadUniqueId\": \"d1c3b425-99db-4ff0-805f-9952066dbcaf\",\n    \"Message\": \"test group 4 dani\",\n    \"JsonMetaData\": \"{\\\"actionType\\\":1,\\\"data\\\":\\\"{\\\\\\\"amount\\\\\\\":7777,\\\\\\\"description\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"id\\\\\\\":161,\\\\\\\"state\\\\\\\":1,\\\\\\\"destUserId\\\\\\\":1900896}\\\"}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/sendMessageToThread",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"sendMessageToThread"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReplyMessage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"627c0db6cc4a49ccae924c01ee202d7b\",\n    \"Message\": \"22222222 گروه\",\n    \"ThreadUniqueId\": \"cbb7094b-289e-41a7-ac7f-30949023126b\",\n    \"MessageUniqueId\": \"724f4cb0-2b3d-42b6-9649-4bb86c3206b3\",\n    \"JsonMetaData\": \"{\\\"actionType\\\":1,\\\"data\\\":\\\"{\\\\\\\"amount\\\\\\\":98000,\\\\\\\"description\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"id\\\\\\\":161,\\\\\\\"state\\\\\\\":1,\\\\\\\"destUserId\\\\\\\":1900896}\\\"}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/replyMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"replyMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddParticipant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"AccessToken\": \"818293c6445041919a5dfe2d76becfcf\",\n    \"ThreadUniqueId\": \"2b32d331-dee5-4a6e-8eed-23426f2813c4\",\n    \"ContactIds\": [\n        22920\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/addParticipants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"addParticipants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetParticipants",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"f6adc88b20894b67ad4fccb442dea171\",\n    \"ThreadUniqueId\": \"724f912f-0fdb-4a52-ba8d-4b21dc0260b1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/getParticipants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"getParticipants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditMessage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"26f5670df6ac4f87855816e28060b17c\",\n    \"UniqueId\": \"6b8a9928-3cd3-47be-80cc-4b14ab1ea647\",\n    \"Message\": \"77 edit\",\n    \"JsonMetaData\": \"{\\\"actionType\\\":1,\\\"data\\\":\\\"{\\\\\\\"amount\\\\\\\":777,\\\\\\\"description\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"id\\\\\\\":161,\\\\\\\"state\\\\\\\":1,\\\\\\\"destUserId\\\\\\\":1900896}\\\"}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/editMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"editMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMessage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"b2bd85162093491dbf398d219672de23\",\n    \"MessageUniqueId\": \"f9926505-3e05-467d-90c4-02967508c832\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/deleteMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"deleteMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LeaveThread",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"35c6cab2ad4d42b9bbbd44478bb98ddf\",\n    \"ThreadUniqueId\": \"d1c3b425-99db-4ff0-805f-9952066dbcaf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/leaveThread",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"leaveThread"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveParticipants",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"e53cc4e92e9d4d6f97d6781cd0902f99\",\n    \"ThreadUniqueId\": \"d1c3b425-99db-4ff0-805f-9952066dbcaf\",\n    \"ParticipantIds\": [\n        11925\n    ],\n    \"TypeCode\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/removeParticipants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"removeParticipants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateThreadInfo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"cac1dba97507419e9cbe1eb19079644c\",\n    \"ThreadUniqueId\": \"d1c3b425-99db-4ff0-805f-9952066dbcaf\",\n    \"Name\": \"25 گ\",\n    \"Description\": \"xxxxxxx\",\n    \"Metadata\": \"{\\\"groupId\\\":100,\\\"groupStatus\\\":\\\"New\\\",\\\"groupType\\\":2,\\\"setting\\\":{\\\"exactAmountPaymentEnable\\\":true,\\\"exceedMaxAmountEnable\\\":false,\\\"showMembersCountEnable\\\":true,\\\"showOtherMembersEnable\\\":true,\\\"showPaymentDescriptionEnable\\\":false,\\\"showPaymentStateEnable\\\":true,\\\"showRequestAmountEnable\\\":true,\\\"showRequestDescriptionEnable\\\":false},\\\"totalAmount\\\":20}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/updateThreadInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"updateThreadInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SetRole",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"e53cc4e92e9d4d6f97d6781cd0902f99\",\n    \"ThreadUniqueId\": \"d1c3b425-99db-4ff0-805f-9952066dbcaf\",\n    \"ParticipantId\": 13045\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/setRole",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"setRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SetAuditorRole",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a906e9f09a364bf48f5cd9032f8068a8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "fa"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccessToken\": \"f489dbc6b76944f2b1ab3301faf9cd97\",\n    \"ThreadUniqueId\": \"d1c3b425-99db-4ff0-805f-9952066dbcaf\",\n    \"Id\": 6021\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chat/setAuditorRole",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"setAuditorRole"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
