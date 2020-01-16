@@ -1,0 +1,56 @@
+N@jaf!3aless
+
+		Ref token							Ssoid		sandboxUserId		UserId		username			nickName		Token
+dani	732cb31105994a5998a68bb6967162a2	133020      22625				2172823		d.kalhori			danielopresto	b778ced48b92493b9260675fc5866511
+amin	d8b94e0117b448ee981a4a22eb7b1857	8148403		19342				2943726		a.najafisales		a.najafisales	e5ff8a8a10d3480bb2d4d2baedeb689b
+shima	21c982cbe9a94d84b9d9be2dfcf48797  	133262		19483				2431773		sh.salehi			شیماصالحی		62e0196d04b04992a59a2c3f52ddd481
+
+e5132fefd5a04a2a8bb27f0aa6c9d62b
+
+
+
+{
+    "AccessToken": "c64db0549c304c5c91c76def698ef08e",
+    "Title": "گروه تستی",
+    "Members": [
+        "a.najafisales",
+        "sh.salehi"
+    ]
+}
+
+"{\"actionType\":1,\"data\":\"{\\\"amount\\\":100,\\\"description\\\":\\\"\\\",\\\"id\\\":161,\\\"state\\\":1,\\\"destUserId\\\":1900896}\"}"
+
+22920
+
+7817b04f-bfff-4ad2-a81d-0e6a5fffdef4
+
+
+
+{
+    "hasError": false,
+    "messageId": 0,
+    "referenceNumber": "70957769",
+    "errorCode": 0,
+    "count": 0,
+    "ott": "60e335b09f8493b6",
+    "result": {
+        "version": 2,
+        "firstName": "wepodChat2",
+        "name": "wepodChat2",
+        "nickName": "wepodChat2",
+        "followingCount": 0,
+        "joinDate": 1574688248846,
+        "userId": 30161,
+        "guest": false,
+        "chatSendEnable": true,
+        "chatReceiveEnable": true,
+        "username": "wepodChat2",
+        "ssoId": "17111363",
+        "ssoIssuerCode": 1,
+        "client_metadata": "{}",
+        "legalInfo": {},
+        "readOnlyFields": "score,followingCount,joinDate"
+    }
+}
+
+
